@@ -35,7 +35,7 @@ function reverso(arrRevers) {
 // Example:
 // compact([0, 1, false, 2, undefined, '', 3, null]); // expected output => [1,2,3]
 
-
+para
 // Exercise 4:
 // Write a function that takes as an argument an array of arrays and returns an object composed of key-value pairs.
 // Example: 
