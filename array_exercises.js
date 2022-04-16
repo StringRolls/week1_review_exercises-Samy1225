@@ -29,7 +29,11 @@ function reverso(arrRevers) {
   }
   
   console.log(reverso([5, 7, 8]));
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 30573df866217a785036324cb54c530d12b90bf8
 // Exercise 3:
 // Write a function that clears an array from all unnecessary elements (false, undefined, empty strings, 0, null).
 // Example:
@@ -54,6 +58,10 @@ para
 // Example: 
 // isEqual([1, 2, 3, 4],[1, 2, 3, 4]) // expected output => true
 // isEqual([1, 2, 3, 4],[1, 2, 3, 4, 5]) // expected output => false
+<<<<<<< HEAD
+=======
+
+>>>>>>> 30573df866217a785036324cb54c530d12b90bf8
 function isEqual(firstArray, secondArray) {
     for (let i = 0; i < firstArray.length; i++) {
       if (firstArray.length !== secondArray.length) return false;
