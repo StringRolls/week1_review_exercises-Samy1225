@@ -5,13 +5,30 @@
 // the value you want to repeat as the second argument. Then it should return a new array with the given values.
 // Example:
 // fill(3, 'a'); // expected output => ['a', 'a', 'a']
-
+function manyTimes(string, times) {
+    const repeatString = [];
+  
+    for (let i = 0; i < times; i++) {
+      repeatString.push(string);
+    }
+    return repeatString;
+  }
+  console.log(manyTimes("samy", 4));
 
 // Exercise 2:
 // Write a function that takes an array as the only argument and reverts it. Avoid using array.prototype.reverse().
 // Example:
 // reverse([1,2,3]); // expected output => [3,2,1]
 
+function reverso(arrRevers) {
+    const readReverse = [];
+    for (let i = arrRevers.length - 1; i >= 0; i--) {
+      readReverse.push(arrRevers[i]);
+    }
+    return readReverse;
+  }
+  
+  console.log(reverso([5, 7, 8]));
 
 // Exercise 3:
 // Write a function that clears an array from all unnecessary elements (false, undefined, empty strings, 0, null).
@@ -38,6 +55,17 @@
 // isEqual([1, 2, 3, 4],[1, 2, 3, 4]) // expected output => true
 // isEqual([1, 2, 3, 4],[1, 2, 3, 4, 5]) // expected output => false
 
+function isEqual(firstArray, secondArray) {
+    for (let i = 0; i < firstArray.length; i++) {
+      if (firstArray.length !== secondArray.length) return false;
+  
+      if (firstArray[i] !== secondArray[i]) {
+        return false;
+      }
+    }
+    return true;
+  }
+  console.log(isEqual([1, 2, 3, 4], [1, 2, 3, 4]));
 
 // Bonus – Exercise 7: 
 // Write a function that takes an array as the first argument and a number as the second argument.
