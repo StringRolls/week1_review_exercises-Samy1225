@@ -35,10 +35,7 @@ console.log(reverso([5, 7, 8]));
 // Example:
 // compact([0, 1, false, 2, undefined, '', 3, null]); // expected output => [1,2,3]
 
-
-
 function clearArray(arr) {
-
   const array = arr.filter((value) => {
     return (
       (value !== false) & (value !== 0) &&
@@ -49,7 +46,7 @@ function clearArray(arr) {
   });
   return array;
 }
-console.log(clearArray([0, 1, false, 2, undefined, '', 3, null]));
+console.log(clearArray([0, 1, false, 2, undefined, "", 3, null]));
 
 /*const dirtyArr = [0, 1, false, 2, undefined, "", 3, null];
 
@@ -58,19 +55,36 @@ function arrClear(arr) {
 
   return clearArr;
   */
-  
 
 // Exercise 4:
 // Write a function that takes as an argument an array of arrays and returns an object composed of key-value pairs.
 // Example:
 // formPairs([['a', 1],['b', 2]]); // expected output => { a: 1, b: 2}
 
+const arrPairs = [
+  ["a", 1],
+  ["b", 2],
+];
+
+function arrayToObject(arr) {
+  const arrNewObj = Object.fromEntries(arr);
+  return arrNewObj;
+}
+console.log(arrayToObject(arrPairs));
+
 // Exercise 5:
 // Write a function that takes an array as a first argument and then two values as the second and third argument.
 // It should return an array without the two values passed as arguments.
 // Example:
 // without([1,2,3,1,2], 1, 2); // expected output => [3]
-
+const values = [1, 2, 3, 1, 2];
+function withoutValues(arr, val1, val2) {
+  const repeatValue = arr.filter((value) => {
+    return value !== val1 && value !==val2;
+  });
+  return repeatValue
+}
+console.log(withoutValues([1,2,3,1,2], 1, 2))
 // Exercise 6:
 // Write a function that takes two arrays as arguments and compares if they are identical.
 // Example:
